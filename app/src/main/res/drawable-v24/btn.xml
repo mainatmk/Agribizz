@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools2="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/Ripple"
+    >
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:startColor="@color/btn" android:endColor="@color/blueish" android:type="linear"/>
+
+                <corners
+                    android:radius="550dp"/>
+        </shape>
+
+    </item>
+
+
+
+</selector>
