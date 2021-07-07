@@ -15,4 +15,7 @@ import androidx.room.Query
         @Query("SELECT * FROM Users_table ORDER BY id ASC")
         fun readAllData(): LiveData<List<user>>
 
+        @Query("SELECT * FROM Users_table LIMIT 1")
+        fun getdata(): LiveData<user>
+
     }

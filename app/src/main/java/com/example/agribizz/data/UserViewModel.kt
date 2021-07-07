@@ -2,6 +2,8 @@ package com.example.agribizz.data
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -9,7 +11,7 @@ import kotlinx.coroutines.launch
 
 class UserViewModel  (application: Application): AndroidViewModel(application) {
     private val repository: UserRepository
-
+    private val readuserobservable = MediatorLiveData<user>()
 
     init {
         val userDao = database.getDatabase(application).userDao()
@@ -22,5 +24,8 @@ class UserViewModel  (application: Application): AndroidViewModel(application) {
                 repository.addUser(user)
             }
         }
+    fun observeuser(): LiveData<user>{
+        return repository.fetchdata()
+    }
     }
 

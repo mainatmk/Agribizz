@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="E-mail/Phone Number"
+        android:text="E-mail"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:textSize="23dp"
@@ -47,6 +47,14 @@
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:padding="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="112dp"
         android:layout_height="wrap_content"
