@@ -23,4 +23,5 @@ class DisplayActivity : AppCompatActivity() {
         })
 
     }
+
 }
