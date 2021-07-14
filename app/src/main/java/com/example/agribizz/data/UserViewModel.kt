@@ -10,12 +10,16 @@ import kotlinx.coroutines.launch
 
 
 class UserViewModel  (application: Application): AndroidViewModel(application) {
+
+    val readAllData :LiveData<List<user>>
+
     private val repository: UserRepository
     private val readuserobservable = MediatorLiveData<user>()
 
     init {
         val userDao = database.getDatabase(application).userDao()
         repository = UserRepository(userDao)
+        readAllData = repository.readAllData
     }
 
         fun addUser(user: user) {
