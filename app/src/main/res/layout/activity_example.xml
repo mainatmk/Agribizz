@@ -28,10 +28,18 @@
         android:textStyle="bold"
         android:textSize="19dp"
         android:id="@+id/Email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:id="@+id/Password"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:onClick="to_login"
         android:id="@+id/Register"
         />
 

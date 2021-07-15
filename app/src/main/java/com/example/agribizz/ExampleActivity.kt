@@ -3,11 +3,14 @@ package com.example.agribizz
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.agribizz.data.UserViewModel
 import com.example.agribizz.data.user
 import kotlinx.android.synthetic.main.activity_example.*
+
+
 
  class ExampleActivity : AppCompatActivity() {
     private lateinit var mUserViewModel: UserViewModel
@@ -28,12 +31,16 @@ import kotlinx.android.synthetic.main.activity_example.*
         val Firstname = FirstName.text.toString()
         val Lastname = LastName.text.toString()
         val Email = Email.text.toString()
-        val user = user(0, Firstname, Lastname, Email)
+        val Password = Password.text.toString()
+        val user = user(0, Firstname, Lastname, Email, Password)
         mUserViewModel.addUser(user)
         Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
 
-        startActivity(Intent(this@ExampleActivity, DisplayActivity::class.java))
+        startActivity(Intent(this@ExampleActivity, LoginActivity::class.java))
     }
-}
+
+
+     }
+
 
 
