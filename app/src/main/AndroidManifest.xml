@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AgriBizz">
-        <activity android:name=".ListUsersActivity">
-
-        </activity>
+        <activity android:name=".ui.RegisterAdapter"></activity>
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ListUsersActivity" />
         <activity android:name=".DisplayActivity" />
         <activity android:name=".ExampleActivity">
             <intent-filter>
@@ -19,7 +19,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".DrawerActivity"
@@ -30,7 +29,7 @@
         <activity android:name=".BuyerProductActivity" />
         <activity android:name=".SupplierProductActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

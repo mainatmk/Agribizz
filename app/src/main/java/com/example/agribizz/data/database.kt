@@ -4,12 +4,16 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.agribizz.register.RegisterDao
+import com.example.agribizz.register.UserRegister
 
-@Database(entities = [user::class], version = 1, exportSchema = false)
+@Database(entities = [user::class,UserRegister::class], version = 2, exportSchema = false)
 abstract class
 database: RoomDatabase() {
 
   abstract fun userDao():UserDao
+  abstract fun RegisterDao():RegisterDao
+
 
     companion object{
         @Volatile
