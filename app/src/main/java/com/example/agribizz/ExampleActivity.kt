@@ -40,7 +40,9 @@ import kotlinx.android.synthetic.main.activity_example.*
     }
 
 
-     }
+
+
+ }
 
 
 
