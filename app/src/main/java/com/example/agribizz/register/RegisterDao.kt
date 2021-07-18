@@ -18,7 +18,4 @@ import com.example.agribizz.data.user
         @Query("SELECT * FROM Users_table LIMIT 1")
         fun getdata(): LiveData<user>
 
-        @Query("Select * FROM users_table where Email = (:email_login) and Password = (:login_password) ")
-        //select all the records in the database that has the firstname and password that the user has given
-        fun loginuser(email_login:String , login_password: String): user
     }

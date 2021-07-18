@@ -5,13 +5,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.agribizz.data.user
+import com.example.agribizz.register.UserRegister
 import kotlinx.android.synthetic.main.item.view.*
 
 public class RegisterAdapter: RecyclerView.Adapter<RegisterAdapter.MyViewHolder>()  {
+    private var registerlist = emptyList<UserRegister>()
 
-    private var userList = emptyList<user>()
+
     override fun getItemCount(): Int {
-        return  userList.size
+        return  registerlist.size
     }
     class  MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
@@ -22,14 +24,15 @@ public class RegisterAdapter: RecyclerView.Adapter<RegisterAdapter.MyViewHolder>
         )
     }
      override fun onBindViewHolder(holder: UserAdapter.MyViewHolder, position: Int) {
-        val  currentItem = userList[position]
+        val  currentItem = registerlist[position]
         holder.itemView.id_txt.text = currentItem.id.toString()
         holder.itemView.firstname_txt.text = currentItem.FirstName
         holder.itemView.last_name_txt.text = currentItem.LastName
         holder.itemView.email_txt.text = currentItem.Email.toString()
     }
-    fun setData(user: List<user>){
-        this.userList = user
+    fun setData(register: List<UserRegister>){
+        this.registerlist = register
         notifyDataSetChanged()
     }
+
 }

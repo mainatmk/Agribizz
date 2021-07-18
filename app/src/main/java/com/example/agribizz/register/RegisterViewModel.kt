@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 
 class RegisterViewModel (application: Application): AndroidViewModel(application) {
 
-
+    val readAllData :LiveData<List<user>>
 
     private val repository: RegisterRepository
     private val readuserobservable = MediatorLiveData<user>()
@@ -22,6 +22,7 @@ class RegisterViewModel (application: Application): AndroidViewModel(application
     init {
         val userDao = database.getDatabase(application).RegisterDao()
         repository = RegisterRepository(userDao)
+        readAllData = repository.readAllData
 
     }
 
