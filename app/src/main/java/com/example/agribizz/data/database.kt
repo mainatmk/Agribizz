@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.agribizz.register.RegisterDao
 import com.example.agribizz.register.UserRegister
 
-@Database(entities = [user::class,UserRegister::class], version = 2, exportSchema = false)
+@Database(entities = [user::class,UserRegister::class], version = 3, exportSchema = false)
 abstract class
 database: RoomDatabase() {
 

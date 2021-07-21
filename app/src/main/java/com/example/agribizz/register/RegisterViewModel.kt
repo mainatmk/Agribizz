@@ -26,10 +26,10 @@ class RegisterViewModel (application: Application): AndroidViewModel(application
 
     }
 
-    fun addUser(user: user) {
+    fun addUser(register: UserRegister) {
         viewModelScope.launch(Dispatchers.IO) {
             //this coroutine will run the function in a background thread
-            repository.addUser(user)
+            repository.addUser(register)
         }
     }
 
