@@ -36,7 +36,7 @@ class RegisterActivity : AppCompatActivity() {
         val Address = address_register.text.toString()
         val UserRegister = UserRegister(0, Name, Email, Password, Address)
 
-        mUserViewModel.addUser(register)
+        //mUserViewModel.addUser(register)
         Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
 
         startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
