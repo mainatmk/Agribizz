@@ -14,13 +14,15 @@ import kotlinx.android.synthetic.main.activity_shared.*
         //instantiate the preference class
         val preferences: SharedPreference = SharedPreference()
 
-        ///declared shared preference
+        //declared shared preference
         val preference = PreferenceManager.getDefaultSharedPreferences(this.applicationContext)
 
         val username = preference.getString(preferences.username, "")
-        Toast.makeText(this, "welcome" + username, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Welcome" + username, Toast.LENGTH_SHORT).show()
 
-        user_shared.setText("Welcome" + username)
+        user_shared.setText("Welcome " + username)
+        
+
 
 
 

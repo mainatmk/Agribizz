@@ -30,7 +30,7 @@ database: RoomDatabase() {
                     context.applicationContext,
                     database::class.java,
                     "user_database"
-                ).build()
+                ).fallbackToDestructiveMigration().build()
                 INSTANCE = instance
 
                 return  instance

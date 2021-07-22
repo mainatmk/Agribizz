@@ -9,7 +9,7 @@ import com.example.agribizz.data.user
     val readAllData: LiveData<List<user>> = registerDao.readAllData()
 
     suspend fun addUser(register: UserRegister) {
-        //RegisterDao.addUser(register)
+       //RegisterDao.addUser(register)
     }
 
     fun fetchdata(): LiveData<user> {
