@@ -11,6 +11,7 @@ data class UserRegister (
     val Name:String,
     val Email:String,
     val PhoneNumber:String,
+    val Occupation: String,
     val Address:String,
 
 

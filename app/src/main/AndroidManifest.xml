@@ -11,7 +11,8 @@
         android:theme="@style/Theme.AgriBizz">
         <activity android:name=".Shared"></activity>
         <activity android:name=".RegisterList" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterActivity" >
+        </activity>
         <activity android:name=".ListUsersActivity" />
         <activity android:name=".DisplayActivity" />
         <activity android:name=".ExampleActivity">
@@ -20,6 +21,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".DrawerActivity"

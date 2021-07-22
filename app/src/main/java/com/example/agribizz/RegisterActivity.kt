@@ -34,12 +34,13 @@ class RegisterActivity : AppCompatActivity() {
         val PhoneNumber = phonenumber_register.text.toString()
         val Password = password_register.text.toString()
         val Address = address_register.text.toString()
-        val UserRegister = UserRegister(0, Name, Email, Password, Address)
+        val Occupation = occupation.text.toString()
+        val UserRegister = UserRegister(0, Name, Email, Password, Address, Occupation )
 
         //mUserViewModel.addUser(register)
         Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
 
-        startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+        startActivity(Intent(this@RegisterActivity, RegisterList::class.java))
     }
 
 }

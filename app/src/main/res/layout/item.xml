@@ -39,6 +39,22 @@
         android:layout_marginLeft="10dp"
         android:textColor="@color/black"
         android:textSize="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LastName"
+        android:id="@+id/Phonenumber_txt"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LastName"
+        android:id="@+id/Occupation_txt"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"/>
 
     <Button
         android:layout_width="wrap_content"

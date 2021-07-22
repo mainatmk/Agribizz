@@ -6,13 +6,8 @@ import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.agribizz.data.UserViewModel
-import com.example.agribizz.data.user
 import com.example.agribizz.register.RegisterViewModel
 import com.example.agribizz.register.UserRegister
-import kotlinx.android.synthetic.main.activity_example.*
-import kotlinx.android.synthetic.main.activity_list_users.*
-import kotlinx.android.synthetic.main.activity_list_users.userRecycler
 import kotlinx.android.synthetic.main.activity_register_list.*
 
 class RegisterList : AppCompatActivity() {
@@ -32,8 +27,8 @@ class RegisterList : AppCompatActivity() {
 
         //users viewmodel
         mUserViewModel =ViewModelProvider(this).get(RegisterViewModel::class.java)
-        mUserViewModel.readAllData.observe(this, Observer {  register ->
-            //adapter.setData(register)
+        mUserViewModel.readAllData.observe(this, Observer {  UserRegister ->
+            //adapter.setData(UserRegister)
         })
 
     }

@@ -4,16 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Shared">
+    tools:context=".Shared"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20dp"
+        android:textSize="40dp"
+        android:text="WELCOME"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:layout_marginLeft="30dp"
         android:id="@+id/user_shared"
         android:textStyle="bold"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/LastName_shared"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/Shared_email"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/Shared_Password"
+        android:textStyle="bold"
+        />
+
+
+
 
 
 </LinearLayout>

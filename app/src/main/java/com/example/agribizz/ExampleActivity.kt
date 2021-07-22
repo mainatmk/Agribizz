@@ -25,7 +25,11 @@ import kotlinx.android.synthetic.main.activity_example.*
 
 
             //get user input
-        val name : String= FirstName.text.toString()
+            val name : String= FirstName.text.toString()
+            val lastname : String= LastName.text.toString()
+            val email : String= Email.text.toString()
+            val password : String= Password.text.toString()
+
 
 
             //instantiate the share preference class
@@ -41,7 +45,11 @@ import kotlinx.android.synthetic.main.activity_example.*
 
 
             //put a string to replace the default value of the username
-        editor.putString(share.username, name)
+            editor.putString(share.username, name)
+            editor.putString(share.lastname, lastname)
+            editor.putString(share.email, email)
+            editor.putString(share.password, password)
+
 
 
             //save what we have edited

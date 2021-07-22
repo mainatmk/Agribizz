@@ -36,9 +36,11 @@ public class RegisterAdapter: RecyclerView.Adapter<RegisterAdapter.MyViewHolder>
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val  currentItem = registerlist[position]
         holder.itemView.id_txt.text = currentItem.id.toString()
-        // holder.itemView.name_register.text = currentItem.name_register
-        // holder.itemView.last_name_txt.text = currentItem.LastName
+         holder.itemView.firstname_txt.text = currentItem.Name.toString()
+         holder.itemView.last_name_txt.text = currentItem.Address
         holder.itemView.email_txt.text = currentItem.Email.toString()
+        holder.itemView.Phonenumber_txt.text = currentItem.Address
+        holder.itemView.Occupation_txt.text = currentItem.Occupation
     }
 
 }
