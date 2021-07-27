@@ -17,34 +17,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
-
-        login_btn.setOnClickListener {
-            //when the login button is clicked I will perform the following tasks
-            // 1 fatma ali 23
-            val firstname_login = email_login.text.toString()
-            val age_login = login_password.text.toString()
-
-            val thread: Thread
-            //instantiate the database
-            val  database_user : database =  database.getDatabase(this)
-
-            //go to the database and accessing the dao
-            val userdao : UserDao = database_user.userDao()
-
-            Thread{
-                //prepare your query to execute in the background
-                Looper.prepare()
-                val user : user = userdao.loginuser(firstname_login , age_login)
-                Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-
-                //execute looper
-                Looper.loop();
-            }.start()
-        }
-
-
     }
+
+
 
     fun supplier(view: View) {
         startActivity(Intent(this@LoginActivity, SupplierProductActivity::class.java))
@@ -69,4 +44,4 @@ class LoginActivity : AppCompatActivity() {
 //
 //
 //
-//        }
+//      }

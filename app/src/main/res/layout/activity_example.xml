@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:onClick="to_login"
-        android:id="@+id/Register"
+        android:id="@+id/register"
         />
 
 </LinearLayout>

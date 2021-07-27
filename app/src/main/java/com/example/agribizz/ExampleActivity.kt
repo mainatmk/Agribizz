@@ -11,10 +11,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.agribizz.data.UserViewModel
 import com.example.agribizz.data.user
 import kotlinx.android.synthetic.main.activity_example.*
+import kotlinx.android.synthetic.main.activity_register.*
 
 
-
- class ExampleActivity : AppCompatActivity() {
+class ExampleActivity : AppCompatActivity() {
     private lateinit var mUserViewModel: UserViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

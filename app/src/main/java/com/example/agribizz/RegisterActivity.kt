@@ -20,8 +20,8 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        Register.setOnClickListener {
-            InsertData()
+        Register.setOnClickListener{
+           InsertData()
         }
 
 
@@ -37,10 +37,15 @@ class RegisterActivity : AppCompatActivity() {
         val Occupation = occupation.text.toString()
         val UserRegister = UserRegister(0, Name, Email, Password, Address, Occupation )
 
-        //mUserViewModel.addUser(register)
+        mUserViewModel.addUser(UserRegister)
         Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
 
-        startActivity(Intent(this@RegisterActivity, RegisterList::class.java))
+        startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+    }
+
+    fun login(view: View) {
+        startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+
     }
 
 }
