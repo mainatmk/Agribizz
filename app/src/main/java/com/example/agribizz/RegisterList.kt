@@ -28,7 +28,7 @@ class RegisterList : AppCompatActivity() {
         //users viewmodel
         mUserViewModel =ViewModelProvider(this).get(RegisterViewModel::class.java)
         mUserViewModel.readAllData.observe(this, Observer {  UserRegister ->
-            //adapter.setData(UserRegister)
+            adapter.setData(UserRegister)
         })
 
     }

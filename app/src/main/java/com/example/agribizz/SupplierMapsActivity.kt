@@ -19,11 +19,9 @@ class SupplierMapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivitySupplierMapsBinding
-
          //the default location- when te map launches we have an area where the map focuses on
          var MyPlace = LatLng(48.73, -73.99)
-
-         // a string location- we will convert the string/location to a longitude and a latitude
+     // a string location- we will convert the string/location to a longitude and a latitude
          var longitude= -73.99
          var latitude= 48.73
 

@@ -6,13 +6,13 @@ import com.example.agribizz.data.user
 
  class RegisterRepository (private val registerDao: RegisterDao) {
 
-    val readAllData: LiveData<List<user>> = registerDao.readAllData()
+    val readAllData: LiveData<List<UserRegister>> = registerDao.readAllData()
 
     suspend fun addUser(register: UserRegister) {
        registerDao.addUser(register)
     }
 
-    fun fetchdata(): LiveData<user> {
+    fun fetchdata(): LiveData<UserRegister> {
         return registerDao.getdata()
     }
 }

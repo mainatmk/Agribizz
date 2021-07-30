@@ -35,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
         val Password = password_register.text.toString()
         val Address = address_register.text.toString()
         val Occupation = occupation.text.toString()
-        val UserRegister = UserRegister(0, Name, Email, Password, Address, Occupation )
+        val UserRegister = UserRegister(0, Name, Email, PhoneNumber, Password, Address, Occupation )
 
         mUserViewModel.addUser(UserRegister)
         Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()

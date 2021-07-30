@@ -4,15 +4,18 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.agribizz.SupplierProduct.SDao
+import com.example.agribizz.SupplierProduct.SGoods
 import com.example.agribizz.register.RegisterDao
 import com.example.agribizz.register.UserRegister
 
-@Database(entities = [user::class,UserRegister::class], version = 4, exportSchema = false)
+@Database(entities = [user::class,UserRegister::class,SGoods::class], version = 8, exportSchema = false)
 abstract class
 database: RoomDatabase() {
 
   abstract fun userDao():UserDao
   abstract fun RegisterDao():RegisterDao
+  abstract fun supplierDao():SDao
 
 
     companion object{
