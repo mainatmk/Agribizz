@@ -1,5 +1,6 @@
 package com.example.agribizz
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.LifecycleOwner
@@ -19,7 +20,7 @@ class RegisterList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_list)
 
-        //place the recycler view here
+        //place the recycler view here11
         val adapter = RegisterAdapter()
         val recyclerView =RegisterRecycler
         recyclerView.adapter = adapter
@@ -28,7 +29,7 @@ class RegisterList : AppCompatActivity() {
         //users viewmodel
         mUserViewModel =ViewModelProvider(this).get(RegisterViewModel::class.java)
         mUserViewModel.readAllData.observe(this, Observer {  UserRegister ->
-            adapter.setData(UserRegister)
+            adapter.setData(UserRegister, this)
         })
 
     }

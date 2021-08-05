@@ -12,4 +12,100 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_supplier_maps">Map</string>
+
+
+    <string-array name="products">
+        <item>Beans</item>
+        <item>Milk</item>
+        <item>Potatoes</item>
+        <item>Kale</item>
+        <item>Kiwi</item>
+        <item>Maize</item>
+        <item>Flowers</item>
+        <item>Tomatoes</item>
+        <item>Onions</item>
+        <item>Carrots</item>
+        <item>Rice</item>
+        <item>Wheat</item>
+        <item>Meat</item>
+        <item>Kales</item>
+        <item>Spinach</item>
+        <item>Yams</item>
+        <item>Broccoli</item>
+        <item>Sweet Potatoes</item>
+        <item>Grapes</item>
+        <item>Oranges</item>
+        <item>Apples</item>
+        <item>Melons</item>
+        <item>Pineapples</item>
+        <item>Lemons</item>
+        <item>Bananas</item>
+        <item>Mangos</item>
+        <item>Pear</item>
+        <item>Guava</item>
+        <item>Avocado</item>
+        <item>Plum</item>
+        <item>Sugar Apple</item>
+        <item>Coconut</item>
+        <item>Dates</item>
+        <item>Papaya</item>
+        <item>Passion</item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+
+    </string-array>
+
+
+    <string-array name="counties">
+        <item>Mombasa</item>
+        <item>Kwale</item>
+        <item>Kilifi</item>
+        <item>Tana River</item>
+        <item>Lamu</item>
+        <item>Taita Taveta</item>
+        <item>Garissa</item>
+        <item>Wajir</item>
+        <item>Mandera</item>
+        <item>Marsabit</item>
+        <item>Isiolo</item>
+        <item>Meru</item>
+        <item>Tharaka Nithi</item>
+        <item>Embu</item>
+        <item>Kitui</item>
+        <item>Machakos</item>
+        <item>Makueni</item>
+        <item>Nyandarua</item>
+        <item>Nyeri</item>
+        <item>Kirinyaga</item>
+        <item>Murang'a</item>
+        <item>Kiambu</item>
+        <item>Turkana</item>
+        <item>West Pokot</item>
+        <item>Samburu</item>
+        <item>Trans Nzoia</item>
+        <item>Uasin Gishu</item>
+        <item>Elgeyo Marakwet</item>
+        <item>Nandi</item>
+        <item>Baringo</item>
+        <item>Laikipia</item>
+        <item>Nakuru</item>
+        <item>Narok</item>
+        <item>Kajiado</item>
+        <item>Kericho</item>
+        <item>Bomet</item>
+        <item>Kakamega</item>
+        <item>Vihiga</item>
+        <item>Bungoma</item>
+        <item>Busia</item>
+        <item>Siaya</item>
+        <item>Kisii</item>
+        <item>Homa Bay</item>
+        <item>Migori</item>
+        <item>Kisumu</item>
+        <item>Nyamira</item>
+        <item>Nairobi City</item>
+    </string-array>
+
 </resources>

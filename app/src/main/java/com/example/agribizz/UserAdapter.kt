@@ -27,7 +27,6 @@ public class UserAdapter: RecyclerView.Adapter<UserAdapter.MyViewHolder>() {
         val  currentItem = userList[position]
         holder.itemView.id_txt.text = currentItem.id.toString()
         holder.itemView.firstname_txt.text = currentItem.FirstName
-        holder.itemView.last_name_txt.text = currentItem.LastName
         holder.itemView.email_txt.text = currentItem.Email.toString()
     }
     fun setData(user: List<user>){

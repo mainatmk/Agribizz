@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.agribizz.data.UserViewModel
@@ -17,9 +18,11 @@ class RegisterActivity : AppCompatActivity() {
 
     private lateinit var mUserViewModel: RegisterViewModel
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
         Register.setOnClickListener{
            InsertData()
         }
@@ -28,14 +31,15 @@ class RegisterActivity : AppCompatActivity() {
         mUserViewModel = ViewModelProvider(this).get(RegisterViewModel::class.java)
     }
 
-    private fun InsertData() {
-        val Name = name_register.text.toString()
+    private fun InsertData()  {
+        val FirstName = name_register.text.toString()
+        val LastName = lastname.text.toString()
         val Email = email_register.text.toString()
         val PhoneNumber = phonenumber_register.text.toString()
-        val Password = password_register.text.toString()
+        val Password = password.text.toString()
         val Address = address_register.text.toString()
         val Occupation = occupation.text.toString()
-        val UserRegister = UserRegister(0, Name, Email, PhoneNumber, Password, Address, Occupation )
+        val UserRegister = UserRegister(0, FirstName,LastName, Email, PhoneNumber, Password, Address, Occupation )
 
         mUserViewModel.addUser(UserRegister)
         Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()

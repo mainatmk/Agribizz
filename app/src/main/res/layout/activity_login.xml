@@ -7,6 +7,7 @@
     tools:context=".LoginActivity"
     android:orientation="vertical"
     >
+
     <include
         layout="@layout/logintool"
    />
@@ -26,6 +27,7 @@
         android:id="@+id/email_login"
         android:background="@drawable/line"
         android:layout_marginLeft="32dp"
+        android:inputType="text"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/ic_baseline_email_24"
@@ -38,7 +40,12 @@
         android:textSize="23dp"
         android:layout_marginTop="34dp"
         />
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        >
+    <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/line"
@@ -46,19 +53,25 @@
         android:id="@+id/login_password"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
+        android:textColor="@color/black"
         android:layout_marginLeft="34dp"
         android:layout_marginTop="20dp"
         android:textSize="17dp"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="112dp"
         android:layout_height="wrap_content"
-        app:rippleColor="@color/blueish"
+        app:rippleColor="@color/black"
         android:background="@color/blueish"
         android:layout_marginTop="33dp"
         android:id="@+id/login_btn"
@@ -67,6 +80,22 @@
         android:textStyle="bold"
         android:textSize="16dp"
         android:onClick="supplier"
-        android:text="SIGN IN"/>
+        android:text="SIGN IN AS SUPPLIER"
+        android:textAllCaps="false"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        app:rippleColor="@color/black"
+        android:background="@color/blueish"
+        android:layout_marginTop="33dp"
+        android:id="@+id/login"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:onClick="buyer"
+        android:text="SIGN IN AS BUYER"
+        android:textAllCaps="false"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </LinearLayout>

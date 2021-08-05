@@ -16,6 +16,8 @@ import com.example.agribizz.register.UserRegister
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -34,9 +36,24 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
             Looper.loop();
         }.start()
-        startActivity(Intent(this@LoginActivity, SupplierProductActivity::class.java))
+        startActivity(Intent(this@LoginActivity, SupplierActivity::class.java))
+    }
+
+    fun buyer(view: View) {
+        val email_login = email_login.text.toString()
+        val password_login = login_password.text.toString()
+        val database: database = database.getDatabase(this)
+        val registerdao: RegisterDao = database.RegisterDao()
+        val thread: Thread
+        Thread {
+            Looper.prepare();
+            val user: UserRegister = registerdao.loginuser(email_login, password_login)
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+            Looper.loop();
+        }.start()
+        startActivity(Intent(this@LoginActivity, BuyerActivity::class.java))
+    }
+
     }
 
 
-
-}

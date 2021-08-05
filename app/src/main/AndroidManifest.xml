@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.agribizz">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AgriBizz">
-
+        <activity android:name=".RateSellerActivity"></activity>
+        <activity android:name=".BuyerActivity" />
+        <activity android:name=".SupplierActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -28,11 +29,10 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <activity
             android:name=".SupplierMapsActivity"
-            android:label="@string/title_activity_supplier_maps">
-        </activity>
-
+            android:label="@string/title_activity_supplier_maps" />
         <activity android:name=".Shared" />
         <activity android:name=".RegisterList" />
         <activity android:name=".RegisterActivity">
@@ -44,8 +44,7 @@
         </activity>
         <activity android:name=".ListUsersActivity" />
         <activity android:name=".DisplayActivity" />
-        <activity android:name=".ExampleActivity" >
-        </activity>
+        <activity android:name=".ExampleActivity" />
         <activity
             android:name=".DrawerActivity"
             android:label="@string/title_activity_drawer"
@@ -54,7 +53,7 @@
         </activity>
         <activity android:name=".BuyerProductActivity" />
         <activity android:name=".SupplierProductActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MainActivity" />
     </application>
 

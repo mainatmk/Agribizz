@@ -9,7 +9,7 @@ import com.example.agribizz.SupplierProduct.SGoods
 import com.example.agribizz.register.RegisterDao
 import com.example.agribizz.register.UserRegister
 
-@Database(entities = [user::class,UserRegister::class,SGoods::class], version = 8, exportSchema = false)
+@Database(entities = [user::class,UserRegister::class,SGoods::class], version = 10, exportSchema = false)
 abstract class
 database: RoomDatabase() {
 
