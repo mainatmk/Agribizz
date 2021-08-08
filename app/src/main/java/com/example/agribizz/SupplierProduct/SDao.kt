@@ -11,12 +11,15 @@ import com.example.agribizz.data.user
 @Dao
 interface SDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun addUser(user: user)
+    fun addUser(supplier: SGoods)
 
-    @Query("SELECT * FROM Users_table ORDER BY id ASC")
+    @Query("SELECT * FROM Suppliers_Table ORDER BY id ASC")
     fun readAllData(): LiveData<List<SGoods>>
 
-    @Query("SELECT * FROM Users_table LIMIT 1")
-    fun getdata(): LiveData<user>
+    @Query("SELECT * FROM Suppliers_Table LIMIT 1")
+    fun getdata(): LiveData<SGoods>
+
+    @Query("DELETE FROM Buyer_Table WHERE Id LIKE :id" )
+    fun delete(id: Int): Int
 
 }

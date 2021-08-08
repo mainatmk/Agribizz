@@ -39,7 +39,7 @@
         android:background="@drawable/line"
         android:padding="10dp"
         android:completionThreshold="1"
-        android:drawableLeft="@drawable/places_ic_search"/>
+        android:drawableLeft="@drawable/ic_baseline_search_24"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -64,6 +64,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
         <TextView
+            android:id="@+id/photo"
             android:layout_width="250dp"
             android:layout_marginTop="10dp"
             android:layout_height="120dp"
@@ -93,6 +94,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 <EditText
+    android:id="@+id/seller_description"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="eg weight"
@@ -125,6 +127,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
+        android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/line"
@@ -191,6 +194,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
+        android:id="@+id/phonenumber_seller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/line"

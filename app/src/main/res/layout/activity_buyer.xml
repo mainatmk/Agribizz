@@ -29,7 +29,7 @@
             android:layout_marginLeft="10dp"
             android:textSize="20dp"/>
         <AutoCompleteTextView
-            android:id="@+id/supplier_product_name"
+            android:id="@+id/buyer_product_name"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Input Product Name"
@@ -39,7 +39,7 @@
             android:background="@drawable/line"
             android:padding="10dp"
             android:completionThreshold="1"
-            android:drawableLeft="@drawable/places_ic_search"/>
+            android:drawableLeft="@drawable/ic_baseline_search_24"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -65,6 +65,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
+        android:id="@+id/buyer_description"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:hint="eg weight"
@@ -97,6 +98,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
+        android:id="@+id/buyer_price_range"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/line"
@@ -165,6 +167,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
+        android:id="@+id/phonenumber_buyer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/line"
