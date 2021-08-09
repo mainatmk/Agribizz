@@ -15,7 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AgriBizz">
-        <activity android:name=".RateSellerActivity"></activity>
         <activity android:name=".BuyerActivity" />
         <activity android:name=".SupplierActivity" />
         <!--
@@ -51,7 +50,6 @@
             android:theme="@style/Theme.AgriBizz.NoActionBar">
             >
         </activity>
-        <activity android:name=".BuyerProductActivity" />
         <activity android:name=".SupplierProductActivity" />
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MainActivity" />
