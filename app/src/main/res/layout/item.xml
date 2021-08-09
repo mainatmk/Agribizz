@@ -42,7 +42,8 @@
         android:textColor="@color/black"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/blueish"
         android:id="@+id/delete_user"
         android:layout_width="wrap_content"
         android:layout_marginLeft="10dp"

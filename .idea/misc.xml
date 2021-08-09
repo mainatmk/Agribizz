@@ -5,11 +5,17 @@
       <map>
         <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/activity_buyer.xml" value="0.25" />
         <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/activity_register_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/activity_supplier.xml" value="0.33" />
+        <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/activity_supplier_adapter.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/activity_supplier_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/supplieritem.xml" value="0.25" />
+        <entry key="..\:/Users/Jhpiego-Nairobi/AndroidStudioProjects/AgriBizz2/app/src/main/res/layout/supplierlayout.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="16" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
