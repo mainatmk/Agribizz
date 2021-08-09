@@ -217,7 +217,6 @@
         android:textColor="@color/white"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:onClick="supplierfinish"
         app:rippleColor="@color/blueish" />
 
 

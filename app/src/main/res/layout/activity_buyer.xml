@@ -191,7 +191,6 @@
         android:textColor="@color/white"
         android:textSize="16dp"
         android:textStyle="bold"
-        android:onClick="buyerfinish"
         app:rippleColor="@color/blueish" />
 
 
