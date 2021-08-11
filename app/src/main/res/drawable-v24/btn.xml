@@ -8,7 +8,7 @@
         <shape
             android:shape="rectangle">
             <gradient
-                android:startColor="@color/btn" android:endColor="@color/blueish" android:type="linear"/>
+                android:startColor="@color/blueish" android:centerColor="@color/white" android:endColor="@color/blueish" android:type="linear"/>
 
                 <corners
                     android:radius="550dp"/>

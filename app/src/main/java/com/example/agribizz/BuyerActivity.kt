@@ -23,6 +23,14 @@ class BuyerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buyer)
 
+        val products = resources.getStringArray(R.array.products)
+
+        val myAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, products)
+        buyer_product_name.setAdapter(myAdapter)
+
+
+
+
         val counties = resources.getStringArray(R.array.counties)
 
         val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, counties)
