@@ -11,7 +11,7 @@
                 android:startColor="@color/blueish" android:centerColor="@color/white" android:endColor="@color/blueish" android:type="linear"/>
 
                 <corners
-                    android:radius="550dp"/>
+                    android:radius="150dp"/>
         </shape>
 
     </item>

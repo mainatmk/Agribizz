@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgriBizz">
         <activity
+            android:name=".BuyerListActivity"
+            android:exported="true" />
+        <activity
             android:name=".BuyerDashboardActivity"
             android:exported="true" />
         <activity
