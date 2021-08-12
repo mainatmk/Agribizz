@@ -6,34 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".BuyerActivity"
     android:orientation="vertical">
-    <include layout="@layout/buyertool"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Product to Buy"
-        android:layout_marginLeft="10dp"
-        android:textSize="33dp"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+    <include layout="@layout/buyertool" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1."
             android:textStyle="bold"
             android:layout_marginLeft="10dp"
-            android:textSize="20dp"/>
+            android:textSize="19dp"/>
         <AutoCompleteTextView
             android:id="@+id/buyer_product_name"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Input Product Name"
-            android:textSize="20dp"
+            android:textSize="19dp"
             android:inputType="text"
             android:layout_marginLeft="10dp"
             android:background="@drawable/line"
@@ -52,16 +45,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2."
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="19dp"
             android:layout_marginLeft="10dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  Product Description"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textSize="19dp"
+            />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
@@ -85,16 +77,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3."
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="19dp"
             android:layout_marginLeft="10dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="   Price Range"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textSize="19dp"
+            />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
@@ -119,16 +110,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4."
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="19dp"
             android:layout_marginLeft="10dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="   Areas Targetted"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textSize="19dp"
+            />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <AutoCompleteTextView
@@ -154,16 +144,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5."
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:textSize="19dp"
             android:layout_marginLeft="10dp"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="   Phone Number"
-            android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textSize="19dp"
+            />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
@@ -171,7 +160,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/line"
-        android:hint="+2547..."
+        android:hint="+254..."
         android:inputType="text"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="20dp"
@@ -180,18 +169,15 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="194dp"
+        android:layout_width="202dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="190dp"
-        android:layout_marginTop="9dp"
-        android:background="@color/blueish"
-        android:padding="10dp"
-        android:id="@+id/buyer"
-        android:text="PLACE ORDER"
-        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/btn"
+        android:text="SEARCH PRODUCT"
         android:textSize="16dp"
-        android:textStyle="bold"
-        app:rippleColor="@color/blueish" />
+        android:id="@+id/Buy"
+        />
 
 
 </LinearLayout>

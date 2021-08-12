@@ -75,7 +75,7 @@
         <item>Nyandarua</item>
         <item>Nyeri</item>
         <item>Kirinyaga</item>
-        <item>Murang'a</item>
+        <item>Muranga</item>
         <item>Kiambu</item>
         <item>Turkana</item>
         <item>West Pokot</item>
@@ -101,7 +101,13 @@
         <item>Migori</item>
         <item>Kisumu</item>
         <item>Nyamira</item>
-        <item>Nairobi City</item>
+        <item>Nairobi</item>
+    </string-array>
+
+    <string-array name="occupation">
+        <item>Supplier</item>
+        <item>Wholesaler</item>
+        <item>Buyer</item>
     </string-array>
 
 </resources>

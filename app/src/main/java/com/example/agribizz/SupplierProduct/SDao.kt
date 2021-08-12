@@ -19,7 +19,7 @@ interface SDao {
     @Query("SELECT * FROM Suppliers_Table LIMIT 1")
     fun getdata(): LiveData<SGoods>
 
-    @Query("DELETE FROM Buyer_Table WHERE Id LIKE :id" )
+    @Query("DELETE FROM Suppliers_Table WHERE Id LIKE :id" )
     fun delete(id: Int): Int
 
 }

@@ -23,20 +23,24 @@ class BuyerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buyer)
 
-//        val products = resources.getStringArray(R.array.products)
-//
-//        val myAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, products)
-//        buyer_product_name.setAdapter(myAdapter)
-//
-//
-//
-//
-//        val counties = resources.getStringArray(R.array.counties)
-//
-//        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, counties)
-//        buyer_target.setAdapter(arrayAdapter)
 
-        Register.setOnClickListener{
+
+
+        val products = resources.getStringArray(R.array.products)
+        val myAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, products)
+        buyer_product_name.setAdapter(myAdapter)
+
+
+
+
+        val counties = resources.getStringArray(R.array.counties)
+      val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, counties)
+        buyer_target.setAdapter(arrayAdapter)
+
+
+
+
+        Buy.setOnClickListener {
             InsertData()
         }
 
@@ -45,18 +49,20 @@ class BuyerActivity : AppCompatActivity() {
 
     }
 
-    private fun InsertData()  {
+    private fun InsertData() {
         val ProductName = buyer_product_name.text.toString()
         val ProductDescription = buyer_description.text.toString()
         val PriceRange = buyer_price_range.text.toString()
         val AreasTargetted = buyer_target.text.toString()
         val PhoneNumber = phonenumber_buyer.text.toString()
-        val buyer = Buyer(0, ProductName,ProductDescription, PriceRange, AreasTargetted, PhoneNumber )
+        val buyer =
+            Buyer(0, ProductName, ProductDescription, PriceRange, AreasTargetted, PhoneNumber)
 
         mUserViewModel.addUser(buyer)
-        Toast.makeText(this, "Registration Successful", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Searching for a match.....", Toast.LENGTH_SHORT).show()
 
         startActivity(Intent(this@BuyerActivity, SupplierMapsActivity::class.java))
     }
-
 }
+
+

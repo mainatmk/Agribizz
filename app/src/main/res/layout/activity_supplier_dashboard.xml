@@ -18,7 +18,7 @@
         android:background="@drawable/btn"
         android:text="SELL PRODUCT"
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="sell_supplier"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
@@ -27,9 +27,10 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/btn"
-        android:text="PrODUCTS ON SALE "
+        android:text="PRODUCTS ON SALE "
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="supplier_list"
+
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
@@ -40,7 +41,7 @@
         android:background="@drawable/btn"
         android:text="LOG OUT"
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="seller_logout"
         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

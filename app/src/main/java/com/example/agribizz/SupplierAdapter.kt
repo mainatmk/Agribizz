@@ -45,7 +45,7 @@ public class SupplierAdapter: RecyclerView.Adapter<SupplierAdapter.MyViewHolder>
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val  currentItem = supplierlist[position]
         var id: Int = currentItem.id
-        holder.itemView.id_txt.text = currentItem.id.toString()
+        holder.itemView.id_supplier.text = currentItem.id.toString()
         holder.itemView.supplier_txt.text = currentItem.ProductName.toString()
         holder.itemView.image_txt.text = currentItem.Photo.toString()
         holder.itemView.price.text = currentItem.Price.toString()

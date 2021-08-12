@@ -43,17 +43,24 @@ class SupplierMapsActivity : AppCompatActivity(), OnMapReadyCallback {
         binding.find.setOnClickListener{
 
 
-            var location: String = binding.location.text.toString() //get user input
-            Toast.makeText(this,"Goods Found:"+ location, Toast.LENGTH_SHORT).show()
 
-       var convertedlatlng :String= getLocationFromAddress(location)
+
+
+            //the commented codes below are of an edit text in the file where the user inputs data
+            //the id of the edit text is id
+
+
+           // var location: String = binding.location.text.toString() //get user input
+            //Toast.makeText(this,"Goods Found:"+ location, Toast.LENGTH_SHORT).show()
+
+       //var convertedlatlng :String= getLocationFromAddress(location)
 
             //splitting the coordinate
-            var spliththecoordinate= convertedlatlng.split(",").toTypedArray()
+           // var spliththecoordinate= convertedlatlng.split(",").toTypedArray()
 
         //store the latitude and the longitude
-            latitude = spliththecoordinate[0].toDouble()
-            longitude = spliththecoordinate[1].toDouble()
+        //    latitude = spliththecoordinate[0].toDouble()
+        //    longitude = spliththecoordinate[1].toDouble()
 
             MyPlace = LatLng(latitude, longitude)
 

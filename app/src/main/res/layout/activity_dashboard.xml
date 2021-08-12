@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="71dp"
         android:orientation="horizontal"
         android:background="@color/blueish"
         >
@@ -23,8 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dashboard"
-        android:textSize="30dp"
-        android:layout_marginLeft="180dp"
+        android:textSize="28dp"
+        android:layout_marginLeft="210dp"
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
@@ -36,22 +36,24 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_gravity="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/btn"
         android:text="SUPPLIER"
+        android:onClick="supplier_dashboard"
         android:textSize="16dp"
-        android:textStyle="bold"
+
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_gravity="center"
+        android:onClick="buyer_dashboard"
         android:layout_marginTop="30dp"
         android:background="@drawable/btn"
         android:text="WHOLESALER / BUYER"
         android:textSize="16dp"
-        android:textStyle="bold"
+
         />
 
 

@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Supplier"
         android:textSize="24dp"
-        android:layout_marginLeft="270dp"
+        android:layout_marginLeft="250dp"
         android:textColor="@color/white"
         android:layout_marginTop="20dp"
         android:textStyle="bold"

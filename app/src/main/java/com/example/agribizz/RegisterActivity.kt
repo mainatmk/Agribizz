@@ -11,6 +11,7 @@ import com.example.agribizz.data.UserViewModel
 import com.example.agribizz.data.user
 import com.example.agribizz.register.RegisterViewModel
 import com.example.agribizz.register.UserRegister
+import kotlinx.android.synthetic.main.activity_buyer.*
 import kotlinx.android.synthetic.main.activity_example.*
 import kotlinx.android.synthetic.main.activity_register.*
 
@@ -22,6 +23,10 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        val occupation = resources.getStringArray(R.array.occupation)
+        val myAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, occupation)
+        buyer_produc_name.setAdapter(myAdapter)
 
         Register.setOnClickListener{
            InsertData()
@@ -38,7 +43,7 @@ class RegisterActivity : AppCompatActivity() {
         val PhoneNumber = phonenumber_register.text.toString()
         val Password = password.text.toString()
         val Address = address_register.text.toString()
-        val Occupation = occupation.text.toString()
+        val Occupation = buyer_produc_name.text.toString()
         val UserRegister = UserRegister(0, FirstName,LastName, Email, PhoneNumber, Password, Address, Occupation )
 
         mUserViewModel.addUser(UserRegister)

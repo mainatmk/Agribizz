@@ -6,6 +6,7 @@ import android.os.Looper
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.MutableLiveData
 import com.example.agribizz.R
 import com.example.agribizz.data.UserDao
 import com.example.agribizz.data.database
@@ -36,24 +37,15 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
             Looper.loop();
         }.start()
-        startActivity(Intent(this@LoginActivity, SupplierActivity::class.java))
+        startActivity(Intent(this@LoginActivity, DashboardActivity::class.java))
     }
 
-    fun buyer(view: View) {
-        val email_login = email_login.text.toString()
-        val password_login = login_password.text.toString()
-        val database: database = database.getDatabase(this)
-        val registerdao: RegisterDao = database.RegisterDao()
-        val thread: Thread
-        Thread {
-            Looper.prepare();
-            val user: UserRegister = registerdao.loginuser(email_login, password_login)
-            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-            Looper.loop();
-        }.start()
-        startActivity(Intent(this@LoginActivity, BuyerActivity::class.java))
-    }
+    fun register_login(view: View) {
+
+        startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
 
     }
+
+}
 
 

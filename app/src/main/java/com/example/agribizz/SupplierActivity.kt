@@ -11,6 +11,7 @@ import com.example.agribizz.SupplierProduct.SGoods
 import com.example.agribizz.SupplierProduct.SViewModel
 import com.example.agribizz.register.RegisterViewModel
 import com.example.agribizz.register.UserRegister
+import kotlinx.android.synthetic.main.activity_buyer.*
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_supplier.*
 
@@ -22,21 +23,29 @@ class SupplierActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_supplier)
 
-//        val products = resources.getStringArray(R.array.products)
-//
-//        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, products)
-//        supplier_product_name.setAdapter(arrayAdapter)
-//
-//
-//        val counties = resources.getStringArray(R.array.counties)
-//
-//        val SupplierAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, counties)
-//        supplier_target.setAdapter(arrayAdapter)
 
-        supplier.setOnClickListener{
+
+        val products = resources.getStringArray(R.array.products)
+        val myAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, products)
+        supplier_product_name.setAdapter(myAdapter)
+
+
+
+
+
+
+        val counties = resources.getStringArray(R.array.counties)
+        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, counties)
+        supplier_target.setAdapter(arrayAdapter)
+
+
+
+
+
+
+        Sell.setOnClickListener{
             InsertData()
         }
-
 
         mUserViewModel = ViewModelProvider(this).get(SViewModel::class.java)
     }
@@ -50,7 +59,7 @@ class SupplierActivity : AppCompatActivity() {
         val sellerproduct = SGoods(0, ProductName,Photo, ProductDescription, Price, AreasTargetted, PhoneNumber)
 
         mUserViewModel.addUser(sellerproduct)
-        Toast.makeText(this, "Products Added", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Product Added...", Toast.LENGTH_SHORT).show()
 
         startActivity(Intent(this@SupplierActivity, SupplierMapsActivity::class.java))
     }

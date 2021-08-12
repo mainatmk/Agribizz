@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:text="AGRI"
         android:textSize="55dp"
-        android:textStyle="bold|italic"
-        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="99dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="top"
         android:gravity="center"
@@ -30,12 +30,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="business"
+        android:text="bizz"
         android:textSize="55dp"
         android:textStyle="bold|italic"
         android:layout_marginLeft="3dp"
         android:layout_gravity="top"
         android:gravity="center"
+        android:textColor="@color/blueish"
         android:layout_marginTop="30dp"
 
         />
@@ -46,7 +47,7 @@
         android:background="@drawable/btn"
         android:text="Get started"
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="getstarted"
         android:layout_marginTop="522dp"
         android:layout_marginLeft="13dp"/>
 

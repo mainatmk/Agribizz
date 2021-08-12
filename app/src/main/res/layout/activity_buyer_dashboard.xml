@@ -22,10 +22,10 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="64dp"
             android:text="Buyer"
-            android:textSize="30dp"
-            android:layout_marginLeft="250dp"
+            android:textSize="28dp"
+            android:layout_marginLeft="270dp"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:textStyle="bold"
@@ -40,7 +40,7 @@
         android:background="@drawable/btn"
         android:text="BUY PRODUCT"
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="buyer_product"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
         android:background="@drawable/btn"
         android:text="MY BASKET "
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="buyer_basket"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:background="@drawable/btn"
         android:text="LOG OUT"
         android:textSize="16dp"
-        android:textStyle="bold"
+        android:onClick="buyer_logout"
         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
