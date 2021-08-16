@@ -83,21 +83,25 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   Price Range"
+            android:text="   Areas Targetted"
             android:textSize="19dp"
             />
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <EditText
-        android:id="@+id/buyer_price_range"
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <AutoCompleteTextView
+        android:id="@+id/buyer_target"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="20dp"
         android:background="@drawable/line"
-        android:hint="Ksh..."
+        android:hint="county..."
         android:inputType="text"
-        android:padding="5dp" />
+        android:layout_marginLeft="30dp"
+        android:completionThreshold="1"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        />
+
+
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -116,23 +120,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   Areas Targetted"
+            android:text="   Price Range"
             android:textSize="19dp"
             />
-    </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <AutoCompleteTextView
-        android:id="@+id/buyer_target"
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <EditText
+        android:id="@+id/buyer_price_range"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/line"
-        android:hint="county..."
-        android:inputType="text"
         android:layout_marginLeft="30dp"
-        android:completionThreshold="1"
         android:layout_marginRight="20dp"
-        android:padding="5dp"
-        />
+        android:background="@drawable/line"
+        android:hint="Ksh..."
+        android:inputType="text"
+        android:padding="5dp" />
+
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

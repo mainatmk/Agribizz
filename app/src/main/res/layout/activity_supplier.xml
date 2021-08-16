@@ -119,21 +119,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   Price"
+            android:text="   Areas Targetted"
             android:textSize="19dp"
             />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <EditText
-        android:id="@+id/price_seller"
+    <AutoCompleteTextView
+        android:id="@+id/supplier_target"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:background="@drawable/line"
+        android:hint="county..."
         android:layout_marginRight="20dp"
         android:inputType="text"
-        android:background="@drawable/line"
-        android:hint="Ksh..."
-        android:padding="5dp" />
+        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:completionThreshold="1"
+        />
+
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -152,23 +155,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="   Areas Targetted"
+            android:text="   Price"
             android:textSize="19dp"
             />
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <AutoCompleteTextView
-        android:id="@+id/supplier_target"
+    <EditText
+        android:id="@+id/price_seller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/line"
-        android:hint="county..."
+        android:layout_marginLeft="30dp"
         android:layout_marginRight="20dp"
         android:inputType="text"
-        android:layout_marginLeft="30dp"
-        android:padding="5dp"
-        android:completionThreshold="1"
-        />
+        android:background="@drawable/line"
+        android:hint="Ksh..."
+        android:padding="5dp" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

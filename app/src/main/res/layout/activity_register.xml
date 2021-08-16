@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="33dp"
         android:text="First Name"
         android:textSize="19dp" />
@@ -24,14 +24,15 @@
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:inputType="text"
-        android:layout_marginLeft="34dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/line"
         android:padding="10dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:text="Last Name"
         android:textSize="19dp" />
@@ -41,16 +42,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:layout_marginLeft="34dp"
+        android:layout_marginLeft="14dp"
         android:inputType="text"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/line"
         android:padding="10dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:text="E-mail"
         android:textSize="19dp"
 
@@ -60,9 +61,9 @@
         android:id="@+id/email_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="12dp"
         android:inputType="text"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/line"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:padding="10dp" />
@@ -70,7 +71,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:text="Phone Number"
         android:textSize="19dp" />
 
@@ -78,16 +79,16 @@
         android:id="@+id/phonenumber_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="34dp"
+        android:layout_marginLeft="14dp"
         android:inputType="text"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/line"
         android:padding="10dp"
         android:text="+254" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:text="Password"
         android:textSize="19dp"
         />
@@ -102,9 +103,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/line"
-            android:layout_marginLeft="32dp"
+            android:layout_marginLeft="12dp"
             android:id="@+id/password_r"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:inputType="textPassword"/>
@@ -114,7 +115,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:text="Occupation"
         android:textSize="19dp" />
 
@@ -122,8 +123,8 @@
         android:id="@+id/buyer_prduc_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="34dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/line"
         android:completionThreshold="1"
         android:inputType="text"
@@ -132,7 +133,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:text="Address"
         android:textSize="19dp" />
 
@@ -140,8 +141,8 @@
         android:id="@+id/address_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="34dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/line"
         android:padding="10dp"
         android:inputType="text"/>
@@ -156,7 +157,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
+            android:layout_marginLeft="12dp"
             android:text="Already a member?"
             android:textSize="19dp" />
 
@@ -173,7 +174,7 @@
         android:id="@+id/Register"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/btn"
         android:text="FINISH"

@@ -108,6 +108,7 @@
         <item>Supplier</item>
         <item>Wholesaler</item>
         <item>Buyer</item>
+        <item>Wholesaler &amp; Buyer</item>
     </string-array>
 
 </resources>
