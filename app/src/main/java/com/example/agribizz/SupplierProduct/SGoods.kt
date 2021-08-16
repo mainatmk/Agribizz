@@ -9,7 +9,6 @@ data class SGoods (
     @PrimaryKey(autoGenerate = true)
     val id:Int,
     val ProductName:String,
-    val Photo:String,
     val ProductDescription:String,
     val Price:String,
     val AreasTargetted:String,

@@ -37,7 +37,7 @@
         android:textSize="19dp" />
 
     <EditText
-        android:id="@+id/lastname"
+        android:id="@+id/lastname_r"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/line"
             android:layout_marginLeft="32dp"
-            android:id="@+id/password"
+            android:id="@+id/password_r"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
             android:padding="10dp"
@@ -119,14 +119,14 @@
         android:textSize="19dp" />
 
     <AutoCompleteTextView
-        android:id="@+id/buyer_produc_name"
+        android:id="@+id/buyer_prduc_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:completionThreshold="1"
         android:layout_marginLeft="34dp"
-        android:inputType="text"
         android:layout_marginRight="20dp"
         android:background="@drawable/line"
+        android:completionThreshold="1"
+        android:inputType="text"
         android:padding="10dp" />
 
     <TextView
@@ -176,7 +176,6 @@
         android:layout_marginLeft="45dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/btn"
-        android:onClick="register"
         android:text="FINISH"
         android:textAllCaps="false"
         android:textSize="16dp"

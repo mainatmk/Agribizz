@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.agribizz.buyer.Buyer
@@ -18,11 +20,19 @@ import kotlinx.android.synthetic.main.activity_supplier.*
 class BuyerActivity : AppCompatActivity() {
 
     private lateinit var mUserViewModel: BuyerViewModel
+    private lateinit var product_nam: EditText
+    private lateinit var buyer_description: EditText
+    private lateinit var buyer_price_range: EditText
+    private lateinit var buy_maps: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buyer)
 
+        product_nam = findViewById(R.id.buyer_product_name)
+        buyer_description = findViewById(R.id.buyer_description)
+        buyer_price_range = findViewById(R.id.buyer_price_range)
+        buy_maps = findViewById(R.id.buy_maps)
 
 
 
@@ -40,7 +50,25 @@ class BuyerActivity : AppCompatActivity() {
 
 
 
-        Buy.setOnClickListener {
+        buy_maps.setOnClickListener {
+
+            val name = buyer_product_name.text.toString().trim()
+            val description = buyer_description.text.toString().trim()
+            val price = buyer_price_range.text.toString().trim()
+
+
+            if (name.isEmpty()) {
+                buyer_product_name.error = "ProductName required"
+                return@setOnClickListener
+            } else if (description.isEmpty()) {
+                buyer_description.error = "Description required"
+            } else if (price.isEmpty()) {
+                buyer_price_range.error = "Price required"
+            } else {
+                startActivity(Intent(this@BuyerActivity, SupplierMapsActivity::class.java))
+            }
+
+
             InsertData()
         }
 

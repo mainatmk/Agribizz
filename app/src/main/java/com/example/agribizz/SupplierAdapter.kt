@@ -13,6 +13,7 @@ import com.example.agribizz.buyer.Buyer
 import com.example.agribizz.data.database
 import com.example.agribizz.register.RegisterDao
 import com.example.agribizz.register.UserRegister
+import kotlinx.android.synthetic.main.activity_supplier.view.*
 import kotlinx.android.synthetic.main.item.view.*
 import kotlinx.android.synthetic.main.item.view.delete_user
 import kotlinx.android.synthetic.main.supplieritem.view.*
@@ -47,7 +48,7 @@ public class SupplierAdapter: RecyclerView.Adapter<SupplierAdapter.MyViewHolder>
         var id: Int = currentItem.id
         holder.itemView.id_supplier.text = currentItem.id.toString()
         holder.itemView.supplier_txt.text = currentItem.ProductName.toString()
-        holder.itemView.image_txt.text = currentItem.Photo.toString()
+        holder.itemView.description_txt.text = currentItem.ProductDescription.toString()
         holder.itemView.price.text = currentItem.Price.toString()
         holder.itemView.areas_txt.text = currentItem.AreasTargetted.toString()
         holder.itemView.phone_txt.text = currentItem.PhoneNumber.toString()

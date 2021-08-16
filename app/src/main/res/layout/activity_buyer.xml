@@ -92,13 +92,13 @@
         android:id="@+id/buyer_price_range"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/line"
-        android:inputType="text"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="20dp"
+        android:background="@drawable/line"
         android:hint="Ksh..."
-        android:padding="5dp"
-        />
+        android:inputType="text"
+        android:padding="5dp" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
         android:background="@drawable/btn"
         android:text="SEARCH PRODUCT"
         android:textSize="16dp"
-        android:id="@+id/Buy"
+        android:id="@+id/buy_maps"
         />
 
 
