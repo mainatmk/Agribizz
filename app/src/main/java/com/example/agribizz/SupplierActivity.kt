@@ -1,14 +1,12 @@
 package com.example.agribizz
 
 import android.content.Intent
+import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.lifecycle.ViewModelProvider
 import com.example.agribizz.SupplierProduct.SGoods
 import com.example.agribizz.SupplierProduct.SViewModel
@@ -27,12 +25,14 @@ class SupplierActivity : AppCompatActivity() {
     private lateinit var phonenumber_seller: EditText
     private lateinit var sell_maps: Button
     private lateinit var mUserViewModel: SViewModel
+    private var our_request_code : Int= 123
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_supplier)
+
 
         supplier_product_nam = findViewById(R.id.supplier_product_name)
         seller_description = findViewById(R.id.seller_description)
@@ -95,6 +95,22 @@ class SupplierActivity : AppCompatActivity() {
             startActivity(Intent(this@SupplierActivity, SupplierMapsActivity::class.java))
         }
 
-
+    fun TakePhoto(view: View) {
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        if(intent.resolveActivity(packageManager) != null){
+            startActivityForResult(intent, our_request_code)
+        }
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == our_request_code && resultCode == RESULT_OK){
+            val imageView : ImageView = findViewById(R.id.image_product)
+            val bitmap = data?.extras?.get("data") as Bitmap
+            imageView.setImageBitmap(bitmap)
+        }
+    }
+
+
+}
 

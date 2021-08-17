@@ -11,7 +11,7 @@ import com.example.agribizz.buyer.BuyerDao
 import com.example.agribizz.register.RegisterDao
 import com.example.agribizz.register.UserRegister
 
-@Database(entities = [user::class,UserRegister::class,SGoods::class, Buyer::class], version = 14, exportSchema = false)
+@Database(entities = [user::class,UserRegister::class,SGoods::class, Buyer::class], version = 16, exportSchema = false)
 abstract class
 database: RoomDatabase() {
 
